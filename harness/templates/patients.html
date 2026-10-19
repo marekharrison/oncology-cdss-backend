@@ -1,0 +1,34 @@
+{% extends "master.html" %}
+
+{% block title %}
+    The Oncology Harness - Patients
+{% endblock %}
+
+{% block content %}
+    <h1> Current Patients</h1> <br /><br />
+    
+    <table border="1">
+        <tr>
+            <th>Patient Number</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+            <th>PSA Level</th>
+            <th>Gleason Score</th>
+            <th>Clinical Stage</th>
+        </tr>
+        {% for x in mypatients %}
+            <tr>
+                <td>{{ x.patient_num }}</td>
+                <td>{{ x.firstname }}</td>
+                <td>{{ x.lastname }}</td>
+                <td>{{ x.age }}</td>
+                <td>{{ x.psa_level }}</td>
+                <td>{{ x.gleason_score }}</td>
+                <td>{{ x.clinical_stage }}</td>
+            </tr>
+        {% endfor %}
+    </table> <br /><br />
+    
+    <p><a href="/">HOME</a></p>
+{% endblock %}

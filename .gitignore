@@ -1,0 +1,86 @@
+# ==============================================================================
+# Python & Django Core
+# ==============================================================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Django local settings & secrets
+local_settings.py
+.env
+.env.*
+
+# Database (keep your local development data private)
+*.sqlite3
+*.db
+
+# Media uploads (user-submitted files) and gathered static files
+media/
+static_collected/
+static_cdn/
+
+# ==============================================================================
+# Environments & Packages
+# ==============================================================================
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+lib/
+lib64/
+
+# Packaging and distribution tools
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ==============================================================================
+# Development Tools & IDEs
+# ==============================================================================
+# JetBrains / PyCharm
+.idea/
+
+# Visual Studio Code
+.vscode/
+
+# System-specific files (Mac / Windows)
+.DS_Store
+Thumbs.db
+
+# Logs and runtime files
+*.log
+pip-log.txt
+cherrypy.log
+
+# ==============================================================================
+# Testing & Coverage
+# ==============================================================================
+.htmlcov/
+.tox/
+.nosenv/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.pytest_cache/
+.mypy_cache/

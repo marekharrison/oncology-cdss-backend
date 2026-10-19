@@ -1,0 +1,25 @@
+{% extends "master.html" %}
+
+{% block title %}
+    The Oncology Harness - Treatment Detail
+{% endblock %}
+
+{% block content %}
+    <h1>Patient Treatment Recommendation</h1>
+    <br />
+    <br />
+
+    <p>Patient Number: {{ mypatients.patient_num }}</p>
+    <p>First Name: {{ mypatients.firstname }}</p>
+    <p>Last Name: {{ mypatients.lastname }}</p>
+    <p>Age: {{ mypatients.age }}</p>
+    <p>PSA Level: {{ mypatients.psa_level }}</p>
+    <p>Gleason Score: {{ mypatients.gleason_score }}</p>
+    <p>Clinical Stage: {{ mypatients.clinical_stage }}</p>
+    <p>Treatment Recommendation: {{ patient_treatment }}</p>
+
+    <br />
+    <br />
+
+    <p><a href="/treatment">BACK</a></p>
+{% endblock %}

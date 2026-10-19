@@ -1,0 +1,25 @@
+{% extends "master.html" %}
+
+{% block title %}
+    The Oncology Harness - Risk Stratificatin Detail
+{% endblock %}
+
+{% block content %}
+    <h1>Patient Risk Stratification</h1>
+    <br />
+    <br />
+
+    <p>Patient Number: {{ mypatients.patient_num }}</p>
+    <p>First Name: {{ mypatients.firstname }}</p>
+    <p>Last Name: {{ mypatients.lastname }}</p>
+    <p>Age: {{ mypatients.age }}</p>
+    <p>PSA Level: {{ mypatients.psa_level }}</p>
+    <p>Gleason Score: {{ mypatients.gleason_score }}</p>
+    <p>Clinical Stage: {{ mypatients.clinical_stage }}</p>
+    <p>Risk Stratification: {{ patient_risk }}</p>
+
+    <br />
+    <br />
+
+    <p><a href="/risk">BACK</a></p>
+{% endblock %}
